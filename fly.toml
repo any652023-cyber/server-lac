@@ -1,0 +1,19 @@
+app = "servidor-lac-app"
+primary_region = "iah"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[[services]]
+  internal_port = 7777
+  protocol = "udp"
+
+  [[services.ports]]
+    port = 7777
+
+[[services]]
+  internal_port = 7777
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 7777
