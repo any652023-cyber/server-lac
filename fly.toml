@@ -1,5 +1,5 @@
 app = "servidor-lac-app"
-primary_region = "mia"
+primary_region = "dfw"
 
 [build]
   dockerfile = "Dockerfile"
