@@ -6,11 +6,11 @@ primary_region = "dfw"
 
 [[services]]
   internal_port = 5055
-  protocol = "udp"
+  protocol = "tcp"
 
   [[services.ports]]
-    port = 7777
-
+    port = 5055
+    
 [[services]]
   internal_port = 5055
   protocol = "tcp"
