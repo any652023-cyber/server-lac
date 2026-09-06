@@ -1,5 +1,10 @@
+# fly.toml app configuration file generated for servidor-lac-app on 2026-09-06T02:00:28Z
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
 app = "servidor-lac-app"
-primary_region = "dfw"
+primary_region = 'dfw'
 
 [build]
   dockerfile = "Dockerfile"
@@ -17,4 +22,11 @@ primary_region = "dfw"
 
   [[services.ports]]
     port = 7777
-    
+
+[[vm]]
+  cpu_kind = 'shared'
+  cpus = 8
+  memory = '2gb'
+  memory_mb = 2048
+  processes = ['app']
+  size = 'shared-cpu-8x'
